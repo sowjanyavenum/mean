@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html ng-app=myApp>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Retail Use APP</title>
+</head>
+<body>
+<div class="container" ng-controller="AppCtrls">
+	<h1>Retail Use APP</h1>
+	<table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>         
+          <th>Company</th>
+          <th>Cost</th>
+          <th>Action</th>
+          <th>&nbsp;</th>
+          </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td><input class="form-control" ng-model="produ.name"></td>
+          <td><input class="form-control" ng-model="produ.company"></td>
+          <td><input class="form-control" ng-model="produ.cost"></td>
+          <td><button class="btn btn-primary" ng-click="addproduct()">Add product</button></td>
+          <td><button class="btn btn-info" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">Clear</button></td>
+        </tr>
+      	<tr ng-repeat= "products in retaillist">
+      	<td>{{products.name}}</td>
+      	<td>{{products.company}}</td>
+      	<td>{{products.cost}}</td>
+      	 <td><button class="btn btn-danger" ng-click="remove(products._id)">Remove</button></td>
+      	 <td><button class="btn btn-warning" ng-click="edit(products._id)">Edit</button></td>
+      	</tr>
+      </tbody>
+      </table>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<script src="controllers/controller.js"></script>
+</body>
+</html>
