@@ -1,0 +1,21 @@
+{
+  "name": "retailapp",
+  "version": "1.0.0",
+  "description": "Sample meanstack app",
+  "main": "server.js",
+  "dependencies": {
+       "express": "^4.13.4",
+       "body-parser": "^1.17.1",
+        "mongojs": "^2.4.0",
+         "mongodb": "^2.0.45"
+
+   },
+   "devDependencies": {},"scripts": {
+  "start": "node server.js"  },
+  "author": "sowjanya",
+  "license": "ISC"
+}
+
+
+
+

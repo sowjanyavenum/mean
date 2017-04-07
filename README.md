@@ -24,13 +24,13 @@ from your MongoDB directory, and then run the code with
 node server
 /retaillist/
 Method	Description
-GET	        Find all contacts
-POST	        Create a new contact
+GET	        Find all products
+POST	        Create a new product
 /retaillist/:id
 Method	Description
-GET	       Find a single contact by ID
-PUT	       Update entire contact document
-DELETE	 Delete a contact by ID
+GET	       Find  product by ID
+PUT	       Update product by ID
+DELETE	 Delete a product by ID
 
 
 Running the app on Bluemix
